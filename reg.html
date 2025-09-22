@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: whitesmoke;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="nav.css">
+
+</head>
+
+<body>
+    <main>
+         <header>
+        <nav class="navbar">
+            <ul>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="login.html">LOGIN</a>
+                <a href="reg.html">REGISTER</a>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="container">
+            <section class="form">
+                <form action="action.js">
+                    <h1>Registration Form</h1>
+                    <p>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname">
+
+                    </p>
+
+                    <p class="custom-select">
+
+                        <label for="city">Choose a City:</label>
+                        <select id="city" name="city">
+                            <option value="0">Select City:</option>
+                            <option value="Ahmedabad">Ahmedabad </option>
+                            <option value="Surat">Surat</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Gandhinagar">Gandhinagar</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="Gender">Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="css" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="Other">Other</label>
+
+                    </p>
+
+                    <p>
+                        <label for="checkbox">Favoritue Language:</label>
+                        <input type="checkbox" id="o1" name="C" value="C" checked="checked">
+                        <label for="o1">C
+                        </label>
+
+                        <input type="checkbox" id="o2" name="C++" value="C++">
+                        <label for="o2">C++
+                        </label>
+
+                        <input type="checkbox" id="o3" name="Java" value="Java">
+                        <label for="o3">Java
+                        </label>
+
+                        <input type="checkbox" id="o4" name="Python" value="Python">
+                        <label for="o4">Python
+                        </label>
+                    </p>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: whitesmoke;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+        
+        #t2 {
+            margin: 2rem;
+            background-color: #ffffff;
+            padding: 32px;
+            justify-items: center;
+            text-align: center;
+            box-shadow: 8px solid black;
+            border-radius: 8px;
+        }
+
+        #p3 {
+            margin: 2rem;
+            background-color: #ffffff;
+            padding: 16px; 
+            min-height: 50px; 
+            justify-items: center;
+            text-align: center;
+            box-shadow: 8px solid black;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function countint() {
+            let text = "";
+            let p = parseFloat(document.getElementById("p").value);
+            let r = parseFloat(document.getElementById("r").value);
+            let n = parseFloat(document.getElementById("n").value);
+
+             
+                 text += `${(p*r*n)/100}`;
+                 document.getElementById("p3").innerHTML = "<h3> Interest Earned : </h3>" + text;
+            
+        }
+
+        
+        function resetMyForm() {
+          
+            document.getElementById("p").value = '';
+            document.getElementById("r").value = '';
+            document.getElementById("n").value = '';
+            document.getElementById("p3").innerHTML = '';
+        }
+    </script>
+    <div>
+        <section id="t2">
+            <label for="input">Principal:</label>
+            <input type="text" id="p" name="principal" placeholder="e.g ; 1000₹">
+
+            <p>
+                <label for="input">Rate:</label>
+            <input type="text" id="r" name="rate" placeholder="in % ; e.g. ; 10">
+            </p>
+
+            <p>
+                <label for="input">Duration:</label>
+            <input type="text" id="n" name="duration" placeholder="in years; e.g. ; 5">
+            </p>
+
+            <p>
+                <button type="submit" onclick="countint()"> Count </button>
+                <button type="button" onclick="resetMyForm()">Out</button>
+            </p>
+        </section>
+            
+        <section id="p3"> </section>
+
+    </div>
+</body>
+</html>

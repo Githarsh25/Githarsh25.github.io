@@ -1,0 +1,27 @@
+     div{
+            background-color: #ffffff;
+        }
+        .container
+        {
+            max-width: 960px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+        }
+
+        .form{
+            padding: 1rem;
+            border-radius: 10px;
+            align-items: left;
+            justify-items: center;
+        }
+
+        .form h1{
+            
+            border-bottom: 2px solid red;
+            margin-top: 0;
+            
+        }
+
+        form p {
+            padding: 0.5rem;
+        }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: whitesmoke;
+">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        #t1 {
+            margin: 2rem;
+            background-color: #ffffff;
+            padding: 32px;
+            justify-items: center;
+            text-align: center;
+            box-shadow: 8px solid black;
+            border-radius: 8px;
+        }
+
+        #p2 {
+            margin: 2rem;
+            background-color: aqua;
+            justify-items: center;
+            text-align: center;
+            box-shadow: 8px solid black;
+            border-radius: 8px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <script>
+        function gentable() {
+            let text = "";
+            let num = parseInt(document.getElementById("num").value)
+
+
+            for (let i = 1; i < 11; i++) {
+                text += `${num} X ${i} = ${num * i}` + "<br>";
+            }
+            document.getElementById("p2").innerHTML = text;
+        }
+
+
+    </script>
+
+    <div>
+        <section id="t1">
+            <label for="input">Enter a Number:</label>
+            <input type="text" id="num" name="ui" placeholder="Write any Number">
+
+            <p> <input type="button" value="Submit" onclick="gentable()"> </p>
+        </section>
+
+        <section id="p2"> </section>
+
+
+ 
+        </section>
+    </div>
+
+       
+</body>
+
+</html>
